@@ -3,7 +3,7 @@
 #include "node.h"
 
 Node::Node(char data) {
-	m_chData = data;;
+	m_chData = data;
 	m_pPrevNode = nullptr;
 	m_pNextNode = nullptr;
   return;

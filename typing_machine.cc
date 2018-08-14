@@ -3,7 +3,7 @@
 #include "typing_machine.h"
 
 TypingMachine::TypingMachine() {
-	m_pCursor = new Node('0');
+	m_pCursor = new Node(0);
 	m_pHeadOfList = m_pCursor;
 	m_pTailOfList = m_pCursor;
 	m_NumOfChar = 0;
@@ -76,7 +76,6 @@ bool TypingMachine::EraseKey() {
 	{
 		return false;
 	}
-
 	else if (m_pCursor->GetPreviousNode() == m_pHeadOfList)
 	{
 		m_pHeadOfList = m_pCursor;
